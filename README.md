@@ -1,3 +1,5 @@
+# 桌面图标台球加塞版
+
 桌面图标台球更新插件 台球来自上游MIT
 Settings for table friction coefficient, hit-point sensitivity, cue ball spin, shot angle and charge strength
 
