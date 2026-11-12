@@ -1,0 +1,6 @@
+# Runtime dependencies of Desktop Icon Billiards.
+# Windows only. No numpy, no audio capture packages: the icon animation is a
+# manual, mouse-driven billiards game.
+Pillow==13.0.0
+pywin32==312
+comtypes==1.4.17

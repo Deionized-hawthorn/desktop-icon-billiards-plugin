@@ -1,0 +1,62 @@
+# Project metadata for Desktop Icon Billiards.
+#
+# The release executable is produced by PyInstaller through build.ps1; setuptools
+# is only used to describe the package (version, dependencies, tooling config),
+# not to build the GUI distribution.
+
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desktop-icon-billiards"
+description = "Play a game of billiards with your Windows desktop icons."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "LXG" }]
+keywords = ["desktop", "billiards", "windows", "tkinter", "game", "wallpaper"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment",
+    "Topic :: Desktop Environment",
+]
+dependencies = [
+    "Pillow==13.0.0",
+    "pywin32==312",
+    "comtypes==1.4.17",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools]
+packages = ["dib"]
+include-package-data = false
+
+[tool.setuptools.dynamic]
+version = { attr = "dib.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]

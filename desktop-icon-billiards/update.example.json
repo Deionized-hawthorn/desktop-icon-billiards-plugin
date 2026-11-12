@@ -1,0 +1,11 @@
+{
+  "version": "0.1.1",
+  "download_url": "https://cnb.cool/liuxiaogang/desktop-icon-billiards/-/releases/download/v0.1.1/DesktopIconBilliards-0.1.1-win-x64.exe",
+  "notes": "修复高 DPI 缩放下瞄准线相对桌面图标偏移的问题。\n完善白球落袋后手动摆球与重开球局的流程，退出时桌面图标恢复更稳定。\n检查更新在无网络时不再长时间等待，失败也不会影响游戏。",
+  "history": [
+    {
+      "version": "0.1.0",
+      "notes": "首个公开版本：桌面图标变成台球，鼠标瞄准、按住蓄力、松开击球。\n支持辅助线、碰库反弹、清台计时和进球统计；退出时恢复原桌面图标布局。\nWindows 10/11 x64 单文件运行，无需安装 Python。"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Python / tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# PyInstaller output (build/ also holds the generated version_info.txt)
+build/
+dist/
+*.spec.bak
+
+# Local release / debugging artifacts
+*.log
+update.local.json
+
+# Website is deployed separately.
+/website/
